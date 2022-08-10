@@ -90,7 +90,7 @@ Partial Class login
         Me.PasswordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DatosBindingSource, "password", True))
         Me.PasswordTextBox.Location = New System.Drawing.Point(134, 102)
         Me.PasswordTextBox.Name = "PasswordTextBox"
-        Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(176)
+        Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordTextBox.Size = New System.Drawing.Size(100, 20)
         Me.PasswordTextBox.TabIndex = 3
         '
@@ -124,6 +124,7 @@ Partial Class login
         Me.Controls.Add(UsuarioLabel)
         Me.Controls.Add(Me.UsuarioTextBox)
         Me.Name = "login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "login"
         CType(Me.DatosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me._test_usersDataSet, System.ComponentModel.ISupportInitialize).EndInit()

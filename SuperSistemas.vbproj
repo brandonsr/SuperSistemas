@@ -65,7 +65,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\Windows\Microsoft.NET\Framework64\v2.0.50727\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -90,6 +92,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="consulproduc.Designer.vb">
+      <DependentUpon>consulproduc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="consulproduc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facturacion.Designer.vb">
+      <DependentUpon>facturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="facturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -103,10 +117,22 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ingProd.Designer.vb">
+      <DependentUpon>ingProd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ingProd.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="login.Designer.vb">
       <DependentUpon>login.vb</DependentUpon>
     </Compile>
     <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modiprod.Designer.vb">
+      <DependentUpon>modiprod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="modiprod.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -135,14 +161,26 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="consulproduc.resx">
+      <DependentUpon>consulproduc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facturacion.resx">
+      <DependentUpon>facturacion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ingProd.resx">
+      <DependentUpon>ingProd.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modiprod.resx">
+      <DependentUpon>modiprod.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
