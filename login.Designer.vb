@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class login
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class login
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim UsuarioLabel As System.Windows.Forms.Label
@@ -32,17 +32,18 @@ Partial Class login
         Me.UsuarioTextBox = New System.Windows.Forms.TextBox()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.ingreso = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         UsuarioLabel = New System.Windows.Forms.Label()
         PasswordLabel = New System.Windows.Forms.Label()
         CType(Me.DatosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._test_usersDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'UsuarioLabel
         '
         UsuarioLabel.AutoSize = True
-        UsuarioLabel.Location = New System.Drawing.Point(82, 67)
+        UsuarioLabel.Location = New System.Drawing.Point(15, 164)
         UsuarioLabel.Name = "UsuarioLabel"
         UsuarioLabel.Size = New System.Drawing.Size(46, 13)
         UsuarioLabel.TabIndex = 0
@@ -51,11 +52,11 @@ Partial Class login
         'PasswordLabel
         '
         PasswordLabel.AutoSize = True
-        PasswordLabel.Location = New System.Drawing.Point(73, 105)
+        PasswordLabel.Location = New System.Drawing.Point(15, 202)
         PasswordLabel.Name = "PasswordLabel"
-        PasswordLabel.Size = New System.Drawing.Size(55, 13)
+        PasswordLabel.Size = New System.Drawing.Size(64, 13)
         PasswordLabel.TabIndex = 2
-        PasswordLabel.Text = "password:"
+        PasswordLabel.Text = "Contraseña:"
         '
         'DatosBindingSource
         '
@@ -80,44 +81,47 @@ Partial Class login
         'UsuarioTextBox
         '
         Me.UsuarioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DatosBindingSource, "Usuario", True))
-        Me.UsuarioTextBox.Location = New System.Drawing.Point(134, 64)
+        Me.UsuarioTextBox.Location = New System.Drawing.Point(85, 161)
         Me.UsuarioTextBox.Name = "UsuarioTextBox"
-        Me.UsuarioTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.UsuarioTextBox.Size = New System.Drawing.Size(171, 20)
         Me.UsuarioTextBox.TabIndex = 1
         '
         'PasswordTextBox
         '
         Me.PasswordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DatosBindingSource, "password", True))
-        Me.PasswordTextBox.Location = New System.Drawing.Point(134, 102)
+        Me.PasswordTextBox.Location = New System.Drawing.Point(85, 199)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(171, 20)
         Me.PasswordTextBox.TabIndex = 3
         '
         'ingreso
         '
-        Me.ingreso.Location = New System.Drawing.Point(76, 168)
+        Me.ingreso.BackColor = System.Drawing.Color.PaleGreen
+        Me.ingreso.Location = New System.Drawing.Point(12, 238)
         Me.ingreso.Name = "ingreso"
-        Me.ingreso.Size = New System.Drawing.Size(75, 23)
+        Me.ingreso.Size = New System.Drawing.Size(244, 23)
         Me.ingreso.TabIndex = 4
         Me.ingreso.Text = "Entrar"
-        Me.ingreso.UseVisualStyleBackColor = True
+        Me.ingreso.UseVisualStyleBackColor = False
         '
-        'Button1
+        'PictureBox1
         '
-        Me.Button1.Location = New System.Drawing.Point(185, 167)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Registrarse"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.PictureBox1.Image = Global.SuperSistemas.My.Resources.Resources.loginface
+        Me.PictureBox1.Location = New System.Drawing.Point(69, 60)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(145, 79)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
         '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(319, 281)
-        Me.Controls.Add(Me.Button1)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(268, 328)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ingreso)
         Me.Controls.Add(PasswordLabel)
         Me.Controls.Add(Me.PasswordTextBox)
@@ -128,6 +132,7 @@ Partial Class login
         Me.Text = "login"
         CType(Me.DatosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me._test_usersDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -139,5 +144,5 @@ Partial Class login
     Friend WithEvents UsuarioTextBox As TextBox
     Friend WithEvents PasswordTextBox As TextBox
     Friend WithEvents ingreso As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
