@@ -56,7 +56,7 @@ poder identificarlo, entonces esta ventana necesita ya sea el código del
 producto el nombre exacto para poder encontrarlo, al ser encontrado sé
 darán los datos del precio, la garantía y la marca del producto.
 
-![consultar.gif](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c309bbfc-8dec-434e-8a99-d80fa252eff6/consultar.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220925T022507Z&X-Amz-Expires=86400&X-Amz-Signature=f711bb6a28a326e17b5d3309a07119c90bfa1ee075dcf81bede5477b90ddc874&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22consultar.gif%22&x-id=GetObject)
+![consultar.gif](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c309bbfc-8dec-434e-8a99-d80fa252eff6/consultar.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220925T024228Z&X-Amz-Expires=86400&X-Amz-Signature=07824ed02d676710ca354c9e0838663f6e8057fdcd7626784864f122af843bb1&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22consultar.gif%22&x-id=GetObject)
 
 ## 📝Modificar Producto:
 
